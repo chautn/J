@@ -1,0 +1,6 @@
+WHAT? To build an executable jar with dependencies included.
+HOW? Use mvn plugin assembly:single.
+- Use <execution>, phase: install, goal: single so that the project can be built with familiar command : mvn clean install
+- Use <finalName> and <appendAssemblyId>false</appendAssemblyId> to modify the jar name.
+- To run the jar: java -jar target/smth-standalone.jar
+
