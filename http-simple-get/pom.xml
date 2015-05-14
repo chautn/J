@@ -1,20 +1,14 @@
 <project>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>catracabasa</groupId>
-	<artifactId>standalone-jar-sample</artifactId>
-	<version>4.x</version>
+	<artifactId>http-simple-get</artifactId>
+	<version>1.x</version>
 	<packaging>jar</packaging>
 	
 	<dependencies>
-		<dependency>
-			<groupId>org.mongodb</groupId>
-			<artifactId>mongo-java-driver</artifactId>
-			<version>2.12.3</version>
-			<scope>compile</scope>
-		</dependency>
 	</dependencies>
 	<build>
-		<finalName>smth</finalName>
+		<finalName>http</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
@@ -27,7 +21,7 @@
 					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>
 					</descriptorRefs>
-					<finalName>smth-standalone</finalName>
+					<finalName>http-standalone</finalName>
 					<appendAssemblyId>false</appendAssemblyId>
 				</configuration>
 				<executions>
