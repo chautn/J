@@ -1,0 +1,15 @@
+This is a Rest service that allows a user to update his avatar.
+The two modules:
+1 - The Rest service itself, in rest-service directory.
+2 - The Java client to show how to use the service, in java-client directory.
+
+To test:
+1. cd rest-service
+2. mvn clean install
+3. deploy target/upload-avatar-rest-service.jar to Platform lib/
+4. start Platform
+
+5. cd java-client
+6. mvn clean install
+7. java -jar target/upload-avatar-rest-service.jar username pass an_image_file
+- Example: java -jar target/upload-avatar-rest-service.jar root gtn myavatar.png

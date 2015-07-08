@@ -1,0 +1,39 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>catracabasa</groupId>
+	<artifactId>upload-avatar-client</artifactId>
+	<version>4.x</version>
+	<packaging>jar</packaging>
+	
+	<dependencies>
+	</dependencies>
+	<build>
+		<finalName>upload-avatar-client</finalName>
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>catracabasa.j.assembly.Executor</mainClass>
+						</manifest>
+					</archive>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+					<finalName>upload-avatar-client</finalName>
+					<appendAssemblyId>false</appendAssemblyId>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id>
+						<phase>install</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
